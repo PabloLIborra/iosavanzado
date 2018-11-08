@@ -1,5 +1,3 @@
-# Sesion 2 - Controladores avanzados: UIPageViewController, UICollectionViewController, UISearchContro
-
 En esta sesión veremos otros controladores que son comunes en aplicaciones iOS: el controlador paginado \(`UIPageViewController`\), las colecciones \(`UICollectionViewController`\) y el controlador de búsqueda para tablas \(`UISearchController`\).
 
 ## UIPageViewController

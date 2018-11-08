@@ -1,5 +1,3 @@
-# Componentes para iPad y aplicaciones universales
-
 En esta primera parte empezaremos explicando distintos componentes de diseño de interfaz de usuario para iOS. Comenzaremos con el funcionamiento de los controladores que se desarrollaron específicamente para iPad (aunque ahora también se usan en los iPhone con pantallas grandes), y daremos una serie de guías para programar aplicaciones universales, que son las compatibles tanto con iPhone como con iPad.
 
 ## Componentes para iPad
