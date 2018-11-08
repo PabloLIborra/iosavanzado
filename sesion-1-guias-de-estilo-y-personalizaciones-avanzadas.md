@@ -311,7 +311,7 @@ Si quisieramos hacer esto mismo desde código (no hace falta), podríamos indica
 
 Ahora queda arrastrar los objetos que queramos que aparezcan en la celda: en este ejemplo, vamos a añadir dos labels y una imagen (_UIImageView_). La celda quedará de la siguiente manera en el _Interface builder_:
 
-![Vista celda](.gitbook/assets/cell_myTableViewCell.png "Vista celda")
+![Vista celda](.gitbook/assets/cell_mytableviewcell.png "Vista celda")
 
 En la pestaña de _Attributes Inspector_ de la celda escribimos un identificador para ella: `TableViewCell`. Esto servirá más adelante para referenciarla desde el controlador de la tabla y así poder utilizar las celdas desde este controlador:
 
