@@ -50,11 +50,11 @@ Para la vista del popover vamos a crear un controlador pulsando en _File > New >
 Arrastra un componente `UITableViewController` al storyboard, e indica que su controlador va a ser nuestro recien creado `TableViewController`. Dale también un nombre al _Storyboard ID_ (llámalo _tablaStoryboard_) y marca la opción _Use Storyboard ID_,  como puede verse en la siguiente imagen. Esto lo hacemos para poder referenciar la vista desde cualquier punto de nuestro código.
 
 
-![Configuración de la vista](.github/assets/popover.png "Configuración de la vista _popover_")
+![Configuración de la vista](.gitbook/assets/popover.png "Configuración de la vista _popover_")
 
 En la pestaña de _Attributes Inspector_ de la celda escribimos un identificador para ella: _TableViewCell_.
 
-![Configuración de la celda](.github/assets/popover_identifier.png "Configuración de la celda")
+![Configuración de la celda](.gitbook/assets/popover_identifier.png "Configuración de la celda")
 
 Ahora vamos a configurar el controlador que se verá en el _popover_, es decir, la tabla a mostrar cuando se pulse el botón. Para ello editamos `TableViewController.swift` con el siguiente código:
 
@@ -178,11 +178,11 @@ Un **Split View** o _Vista divida_ es, como hemos comentado anteriormente, una c
 
 En modo horizontal (_landscape mode_), la primera vista (maestra) es equivalente en anchura a una vista de iPhone cuando se encuentra en orientación vertical. Esta vista maestra se suele usar para la navegación principal dentro de un listado de opciones de la aplicación. Por otro lado, la vista de la derecha (detalle), que corresponderá a la porción más grande de la pantalla, mostrará la información en detalle que hayamos seleccionado en la vista de la izquierda. Este es el uso que Apple propone para este tipo de controlador, aunque puede tener muchos más.
 
-![Split View](.github/assets/splitview_landscape.png "Split View en modo horizontal")
+![Split View](.gitbook/assets/splitview_landscape.png "Split View en modo horizontal")
 
 En modo vertical (_portrait mode_), el _Split View_ cambia y puede verse como un _Navigation Bar_ con dos vistas. La primera es la vista maestra, y la segunda la vista detalle. Esta transformación hace falta programarla si no hacemos uso de las plantillas de XCode. Por tanto, sólo una de las vistas ocupará toda la pantalla del iPad, como podemos ver en la siguiente imagen:
 
-![Split View vertical](.github/assets/splitview_portrait.png "Split View vertical")
+![Split View vertical](.gitbook/assets/splitview_portrait.png "Split View vertical")
 
 Incorporar un controlador _Split View_ a nuestra aplicación es bastante sencillo aunque no es trivial. Es por ello que vamos a explicarlo con una app de ejemplo que mostrará información sobre tablets. En modo horizontal (_landscape_) tendremos un listado en forma de tabla con todos los tablets en la parte izquierda del _Split View_ y cuando seleccionemos uno nos aparecerán sus detalles en la parte derecha. Pero antes de hacer este ejercicio, vamos a ver conceptos importantes para el diseño de una app universal.
 
@@ -517,7 +517,7 @@ Utilizamos el término **universal** para denominar a todas aquellas aplicacione
 
 El desarrollo de una aplicación universal ahorra tiempo de desarrollo respecto a hacer apps independientes para cada dispositivo, ya que evidentemente programaremos un sólo proyecto en lugar de varios. También tiene ventajas para las actualizaciones, ya que tendremos que preocuparnos de implementar los cambios sólo en una aplicación.
 
-![App universal UA](.github/assets/ui-s01-img18.png "App universal UA")
+![App universal UA](.gitbook/assets/ui-s01-img18.png "App universal UA")
 
 En XCode podemos crear desde cero aplicaciones universales usando cualquier plantilla de las disponibles, entre las que destaca la plantilla `Master Detail`, que emplea un controlador de tipo `Split View`.
 
@@ -557,7 +557,7 @@ Primero abrimos la vista principal del storyboard. Podemos ver cómo quedaría e
 
 * Pincha en el Asistente (el símbolo de los anillos del menú superior)
 * En este menú, selecciona _Preview_ y luego `Main.storyboard`.
-![Storyboard preview](.github/assets/xcode6_preview_layout.png "XCode 6 preview layout")
+![Storyboard preview](.gitbook/assets/xcode6_preview_layout.png "XCode 6 preview layout")
 * Pincha sobre el botón + que aparece en la pantalla inferior y elige un iphone (cualquier tamaño)
 * Repite el proceso y elige un iPad
 * Arrastra un `UILabel` a la vista principal y suéltala por el centro de la vista.
@@ -580,7 +580,7 @@ A nivel de diseño de interfaz, en lugar de distinguir entre iPhone e iPad, Appl
 
 Además, estos tamaños pueden venir dados para la anchura (_Width_) o la altura (_Height_). Si abrimos el _storyboard_ y pinchamos en la parte inferior sobre _View as: iPhone 8 (wC hR)_ podremos ver que se muestran iPhones y iPads de distintos tamaños.
 
-![XCode 8 devices preview](.github/assets/xcode8_devices.png "XCode 8 devices preview")
+![XCode 8 devices preview](.gitbook/assets/xcode8_devices.png "XCode 8 devices preview")
 
 Tal como se muestra en esta imagen, debemos tener en cuenta tres factores:
 
@@ -590,7 +590,7 @@ Tal como se muestra en esta imagen, debemos tener en cuenta tres factores:
 
 Los valores `wR` y `hR` representan _Regular Width_ y _Regular Height_. Básicamente (aunque en realidad es algo más complicado), los dispositivos de Apple tienen los siguientes tamaños:
 
-![Size classes](.github/assets/size_classes.png "Size classes")
+![Size classes](.gitbook/assets/size_classes.png "Size classes")
 
 Puedes ver un listado completo de los tamaños [en este enlace](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/).
 
@@ -712,7 +712,7 @@ Cambia el título de la barra `Detail` por `Película`.
 -->
 Haz que la vista sea como la siguiente, añadiendo un `UILabel`, un `UIImageView` y `UITextView`:
 
-![Vista universal](.github/assets/movies_detail_first.png "Vista universal")
+![Vista universal](.gitbook/assets/movies_detail_first.png "Vista universal")
 
 La etiqueta `Titulo` es la que teníamos en el centro, que debes mover a la parte superior izquierda.
 
@@ -745,7 +745,7 @@ Necesitarás descargar <a href="sentido.jpg">esta imagen</a> y arrastrarla a los
 
 Por último, en las propiedades del `UIImageView` cambia el `ContentMode` a `Aspect Fit` para que la imagen no se deforme:
 
-![Corregir imágenes](.github/assets/movies_aspect_fit.png "Corregir imágenes")
+![Corregir imágenes](.gitbook/assets/movies_aspect_fit.png "Corregir imágenes")
 
 Ejecuta el programa con el simulador de distintos iphone e ipad para ver los resultados. Seguro que visualmente no queda demasiado bien, pero de momento no es un problema. Vamos a ajustar mejor la vista en función del dispositivo, y a poner la fecha sólo en el ipad.
 
@@ -757,7 +757,7 @@ Una opción para hacer esto sería seleccionar un iPhone apaisado, y marcar _Var
 
 Deja _Vary for Traits_ desmarcado (la barra inferior no debe estar en azul), y selecciona el `UIImageView` y el `UITextView`.  Ahora pulsa sobre el elemento _Stack_, el icono de la flecha hacia abajo en esta imagen, y selecciona `Stack View`:
 
-![Stack views](.github/assets/stack.png "Stack views")
+![Stack views](.gitbook/assets/stack.png "Stack views")
 
 Verás que las vistas se unen, esto es porque hemos creado un grupo con dos elementos. Como ves, un _Stack_ se usa para agrupar vistas, y nos permite realizar acciones interesantes como vamos a ver a continuación. Vamos a reajustar las _constraints_ con este nuevo _Stack_, seleccionando _Reset to suggested constraints_ para toda la vista detalle.  
 
@@ -782,11 +782,11 @@ override func viewWillLayoutSubviews() {
 
 Este método se invoca cuando iOS detecta que hay que reajustar las vistas (por ejemplo cuando se realiza un giro). En el código indicamos que cuando tengamos más espacio horizontal que vertical nuestras vistas del _stack_ deben reposicionarse. Además, lo harán con una animación. Prueba a ejecutar de nuevo el programa en un iPhone, debe verse así en _portrait_:
 
-![iPhone portrait stack](.github/assets/movies_detail_portrait.png "iPhone stack portrait")
+![iPhone portrait stack](.gitbook/assets/movies_detail_portrait.png "iPhone stack portrait")
 
 Y así en _landscape_:
 
-![iPhone landscape stack](.github/assets/movies_detail_landscape.png "iPhone stack landscape")
+![iPhone landscape stack](.gitbook/assets/movies_detail_landscape.png "iPhone stack landscape")
 
 Para saber más sobre lo que podemos hacer con la clase `UIStackView`, puedes consultar su referencia  <a href="https://developer.apple.com/reference/uikit/uistackview">aquí</a>.
 
@@ -794,25 +794,25 @@ Para saber más sobre lo que podemos hacer con la clase `UIStackView`, puedes co
 
 Vamos a ajustar el _constraint_ de la altura de la imagen para hacerla más grande en tamaños `wR-hR`, ya que en estos casos tenemos más espacio.
 
-![Constraints1](.github/assets/movies_constraint1.png "Constraints (1/3)")
+![Constraints1](.gitbook/assets/movies_constraint1.png "Constraints (1/3)")
 
 Ahora pulsamos sobre el botón `+` de la altura, añadiendo una variación para `wR-hR`:
 
-![Constraints2](.github/assets/movies_constraint2.png "Constraints (2/3)")
+![Constraints2](.gitbook/assets/movies_constraint2.png "Constraints (2/3)")
 
 Y finalmente indicamos un valor más alto:
 
-![Constraints3](.github/assets/movies_constraint3.png "Constraints (3/3)")
+![Constraints3](.gitbook/assets/movies_constraint3.png "Constraints (3/3)")
 
 Ejecutamos el programa y vemos que funciona correctamente en iPad, en cualquier orientación. Ahora vamos a cambiar el tipo de letra para `wR-hR`, de forma que se vea más grande en un iPad. Cambia sólo para tamaños `wR-hR` la fuente del texto a _System-20_, y la del título a _System-22_ y en negrita:
 
-![Movies text](.github/assets/movies_text.png "Text size change")
+![Movies text](.gitbook/assets/movies_text.png "Text size change")
 
 Ahora vamos a añadir una etiqueta que contenga la fecha, pero sólo en aquellos casos en los que tengamos suficiente espacio en anchura, en orientaciones regular width: `wR`.
 
 Seleccionamos un iPad en la barra inferior del _storyboard_, e indicamos _Vary for traits > width_. La barra debe cambiar a color azul. Añadimos un _UILabel_ arriba a la derecha, al que pondremos el título _Fecha_, como puede verse en la siguiente imagen:
 
-![Fecha](.github/assets/movies_fecha.png "Fecha sólo para wR")
+![Fecha](.gitbook/assets/movies_fecha.png "Fecha sólo para wR")
 
 Cuando el ancho es _Regular_ tenemos más espacio, es por esto que lo añadimos aquí. Esta etiqueta sólo se mostrará en los iPad cuando nuestra app esté a pantalla completa en cualquier orientación, o en el iPhone 6s/7 Plus con pantalla completa y _landscape_.
 
@@ -843,8 +843,8 @@ Vamos a poner un código condicional para la fecha, ya que sólo se mostrará en
 
 Ejecutamos el código en el simulador de iPad para ver los resultados. Deberíamos obtener algo parecido a esto:
 
-![Vista iPad portrait](.github/assets/movies_ipad_portrait.png "Vista iPad portrait")
-![Vista iPad landscape](.github/assets/movies_ipad_landscape.png "Vista iPad landscape")
+![Vista iPad portrait](.gitbook/assets/movies_ipad_portrait.png "Vista iPad portrait")
+![Vista iPad landscape](.gitbook/assets/movies_ipad_landscape.png "Vista iPad landscape")
 
 El aspecto no está mal, pero sólo es una primera aproximación. Vamos a mejorar un poco el programa en  el siguiente ejercicio.
 

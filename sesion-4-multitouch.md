@@ -20,7 +20,7 @@ Los dispositivos iOS también admiten varias pulsaciones al mismo tiempo, lo que
 
 Comenzamos creando un proyecto en XCode de tipo _Single View_ que guardaremos con el nombre `ejercicio_touch`. Creamos un objeto de tipo _UIImageView_, lo arrastramos a la vista colocándolo en la parte superior izquierda de la pantalla, y lo enlazamos a nuestro `ViewController` para crear la propiedad, a la que llamaremos _imageView_. Arrastra la imagen <a href="logo-master.png">logo-master.png</a> al proyecto y asígnala a la vista como se indica a continuación (aunque también se podría hacer por código):
 
-![Asignar imagen](.github/assets/multitouch_logo-master.png "Asignar imagen")
+![Asignar imagen](.gitbook/assets/multitouch_logo-master.png "Asignar imagen")
 
 Ahora editamos el archivo `ViewController.swift`, y añadimos un _booleano_ llamado `tocaImagen`. Debe quedar de la siguiente forma:
 
@@ -72,7 +72,7 @@ Como podemos observar en el código anterior, hemos utilizado la clase de Cocoa 
 
 Con esto último ya podemos ejecutar la aplicación y veremos que podemos pulsar sobre la imagen y arrastrarla.
 
-![Pantalla de la aplicación](.github/assets/multitouch_pantalla_app.png "Pantalla de la aplicación")
+![Pantalla de la aplicación](.gitbook/assets/multitouch_pantalla_app.png "Pantalla de la aplicación")
 
 El funcionamiento de estos métodos es muy simple. Primero se ejecuta `touchesBegan` que detecta el primer _toque_ sobre la pantalla, en el comprobamos si la posición del toque está dentro del cuadro (_frame_) del `UIImageView`. Si es así actualizamos la variable booleana a `true`, y en caso contrario no hacemos nada. En el momento en que arrastremos el dedo sobre la pantalla se ejecutará continuamente el método `touchesMoved`. En este, si la variable booleana `tocaImagen` está a `true` actualizamos la posición de la imagen a la posición detectada, y en caso contrario no hacemos nada. Por último, cuando dejamos de pulsar la pantalla se ejecutará el método `touchesEnded` el cual simplemente volverá a actualizar la variable booleana a `false`.
 
@@ -84,7 +84,7 @@ En caso de que queramos detectar varios toques al mismo tiempo, primero deberemo
 
 También podríamos haberlo hecho desde el Storyboard, pinchando sobre el `UIImageView`:
 
-![Multitouch storyboard](.github/assets/multitouch_storyboard.png "Multitouch desde el storyboard")
+![Multitouch storyboard](.gitbook/assets/multitouch_storyboard.png "Multitouch desde el storyboard")
 
 Y luego podemos gestionar los toques simultáneos como en el siguiente ejemplo, en el que vamos a modificar el método `touchesBegan`:
 
