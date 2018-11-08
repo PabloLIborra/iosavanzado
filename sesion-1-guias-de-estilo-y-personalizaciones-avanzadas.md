@@ -80,7 +80,7 @@ Todo usuario que usa una aplicación interactúa mediante la pantalla. Existen d
 
 El tamaño en puntos no es el mismo que el tamaño en píxeles, que normalmente es un múltiplo (2x, 3x) de los puntos, como puede verse en el siguiente ejemplo:
 
-![Resolución iPhone](.gitbook/assets/design-Resolutions.jpg "Resolución iphone")
+![Resolución iPhone](.gitbook/assets/design-resolutions.jpg "Resolución iphone")
 
 > Detección de contacto (touch events). El tamaño de la zona mínima para que el evento de contacto funcione correctamente debe de ser de al menos 44 x 44 puntos.
 
