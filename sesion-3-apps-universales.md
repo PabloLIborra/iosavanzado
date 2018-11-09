@@ -339,7 +339,7 @@ Haremos la llamada a este método desde `viewDidLoad` de `MasterViewController` 
 self.crearListaTablets()
 ```
 
-Las imágenes de las tablets las podemos descargar desde <a href="imagenes_tablets.zip">aquí</a>. Una vez descargadas, las descomprimimos y las arrastramos a los _Assets_.
+Las imágenes de las tablets las podemos descargar desde <a href=".gitbook/assets/imagenes_tablets.zip">aquí</a>. Una vez descargadas, las descomprimimos y las arrastramos a los _Assets_.
 
 Compilamos y ejecutamos. Como se puede ver, ya tenemos los nombres en la tabla (cuando el dispositivo está girado), pero al no haber barra de navegación el contenido de la tabla se superpone a la información de la barra superior (_status bar_).
 

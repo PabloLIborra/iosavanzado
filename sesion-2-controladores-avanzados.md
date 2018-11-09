@@ -108,7 +108,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
     var pageViewController : UIPageViewController?
 ```
 
-Puedes descargar las imágenes que vamos a usar desde <a href="pageview_images.zip">aquí</a>, y añadirlas al proyecto.
+Puedes descargar las imágenes que vamos a usar desde <a href=".gitbook/assets/pageview_images.zip">aquí</a>, y añadirlas al proyecto.
 
 Ya hemos creado el modelo de datos, pero nos falta implementar los métodos del protocolo `UIPageViewControllerDataSource`, que deben ser al menos estos dos:
 
@@ -301,7 +301,7 @@ Nos queda configurar el _data source_, es decir, implementar los métodos delega
 
 > Si quieres más información sobre los métodos de un protocolo o de cualquier clase Cocoa, en la vista de código de XCode puedes pinchar sobre el nombre del mismo con _Alt+click_ para ver la ayuda, o con _Command+click_ para ver su declaración (aunque esto último no suele servir de ayuda).
 
-Vamos a crear los datos de nuestra aplicación. Descarga <a href="collectionview_image_pack.zip">este</a> fichero con imágenes, y añádelas todas al proyecto. Crearemos un array para almacenarlas:
+Vamos a crear los datos de nuestra aplicación. Descarga <a href=".gitbook/assets/collectionview_image_pack.zip">este</a> fichero con imágenes, y añádelas todas al proyecto. Crearemos un array para almacenarlas:
 
 ```swift
 var foodImages = [String]()
