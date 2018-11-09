@@ -358,7 +358,6 @@ Descarga la imagen _logo\_master.png_ desde <a href=".gitbook/assets/logo-master
 
 <!---
 Como podrás ver, se solapa la barra de estado con el principio de la tabla. Esto podríamos resolverlo añadiendo la siguiente línea al método `ViewDidLoad`:
-
 ```swift
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
 ```
