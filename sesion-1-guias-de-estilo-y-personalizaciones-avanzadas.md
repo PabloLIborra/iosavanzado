@@ -370,7 +370,8 @@ La aplicación funciona y se muestra una tabla, aunque no tiene barra de navegac
     self.title = "Mi tabla personalizada"
 ```
 
-Una vez que tenemos las celdas hechas vamos a personalizar la tabla un poco más añadiendo un fondo a las celdas pares y otro a las impares, para hacer un efecto _zebra_. Necesitaremos dos imágenes más que se pueden descargar <a href="img_fondo_celdas.zip">aquí</a>.
+Una vez que tenemos las celdas hechas vamos a personalizar la tabla un poco más añadiendo un fondo a las celdas pares y otro a las impares, para hacer un efecto _zebra_. Necesitaremos dos imágenes más que se pueden descargar <a
+href=".gitbook/assets/img_fondo_celdas.zip">aquí</a>.
 
 Abrimos la vista de la celda en el storyboard y arrastramos un `UIImageView` ocupando todo el espacio de la celda. Es necesario enviar esta vista al fondo, con el menú _Editor > Arrange > Send to back_. Si en el modo visual se van descolocando las vistas de la celda cuando las mueves (no debería ocurrir en las últimas versiones de XCode), ajusta los tamaños desde el _Size Inspector_.
 
@@ -484,7 +485,8 @@ override func viewDidLoad() {
 }
 ```
 
-Para que el código funcione debemos descargarnos las imágenes desde <a href="imagenes_toolbar.zip">aquí</a> y añadirlas a los _Assets_ del proyecto. Una vez hecho esto ya podemos ejecutar el proyecto y ver cómo ha cambiado. De esta forma tendremos nuestro componente _ToolBar_ bastante personalizado, dándole a la aplicación un aspecto visual diferenciado.
+Para que el código funcione debemos descargarnos las imágenes desde <a
+href=".gitbook/assets/imagenes_toolbar.zip">aquí</a> y añadirlas a los _Assets_ del proyecto. Una vez hecho esto ya podemos ejecutar el proyecto y ver cómo ha cambiado. De esta forma tendremos nuestro componente _ToolBar_ bastante personalizado, dándole a la aplicación un aspecto visual diferenciado.
 
 ![ToolBar personalizado](.gitbook/assets/toolbar_final.png "ToolBar personalizado")
 
